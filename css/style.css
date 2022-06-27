@@ -45,6 +45,14 @@ section{
     font-family: 'Montserrat';
 }
 
+.heading2{
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color:#ffffff;
+    font-family: 'Montserrat';
+}
+
 
 .btn{
     padding: 9px 40px;
@@ -317,6 +325,7 @@ header .menu {
     font-size: 1rem;
     color:var(--light-color);
 }
+/* review trending start */
 .review .review-slider {
     padding: 1rem;
 }
@@ -352,67 +361,149 @@ header .menu {
     font-size: 2rem;
     font-family: 'Montserrat';
 }
+/* review trending end */
+
 
 .blogs .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap:1.5rem;
 }
 
 .blogs .box-container .box{
     overflow: hidden;
     border-radius: .5rem;
-    box-shadow: var(--box-shadow);
-    background:#fff;
+    background:transparent;
+    text-align: center;
 }
 
 .blogs .box-container .box img{
-    height:25rem;
+    height:20rem;
     width:100%;
+    border-radius: 2rem;
     object-fit: cover;
-}
-
-.blogs .box-container .box .content{
-    padding:2rem;
-}
-
-.blogs .box-container .box .content .icons{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 1.5rem;
-    margin-bottom: 1rem;
-    border-bottom: var(--border);
-}
-
-.blogs .box-container .box .content .icons a{
-    color:var(--light-color);
-    font-size: 1.5rem;
-}
-
-.blogs .box-container .box .content .icons a:hover{
-    color:var(--black);
-}
-
-.blogs .box-container .box .content .icons a i{
-    color:var(--orange);
-    padding-right: .5rem;
 }
 
 .blogs .box-container .box .content h3{
     line-height: 1.8;
-    color:var(--black);
+    color:#fff;
     font-size: 2.2rem;
     padding:.5rem 0;
 }
 
-.blogs .box-container .box .content p{
-    line-height: 1.8;
-    color:var(--light-color);
-    font-size: 1.5rem;
-    padding:.5rem 0;
+
+
+/* work section start */
+.works {
+    background: transparent;
 }
 
+.works .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.works .box-container .box {
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    background: #1D1429;
+    border-radius: 1.5rem;
+}
+.works .box-container .box:hover{
+    opacity: 0.5;
+}
+.works .box-container .box img {
+    width: 20%;
+    margin: 1rem;
+    border-radius: 50%;
+}
+
+.works .box-container .box h1 {
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 0;
+    font-family: 'Montserrat';
+}
+
+.works .box-container .box p {
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Montserrat';
+    padding: 1.5rem;
+}
+
+.works .box-container .box1 h1 {
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 0;
+    font-family: 'Montserrat';
+}
+
+.works .box-container .box1 p {
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #fff;
+    padding: 1rem 0;
+    font-family: 'Montserrat';
+}
+
+/* work section end */
+
+/* chart start */
+
+.chart{
+    background:transparent;
+}
+.chart img{
+    object-fit: cover;
+    width: 100%;
+
+}
+/* chart end */
+
+/* doller section start */
+.doller {
+    background: transparent;
+}
+
+.doller .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.doller .box-container .box {
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    border-radius: 1.5rem;
+}
+
+.doller .box-container .box:hover {
+    opacity: 0.5;
+}
+
+.doller .box-container .box h1 {
+    font-size: 3rem;
+    color: #fff;
+    padding: 1rem 0;
+    font-family: 'Montserrat';
+}
+
+.doller .box-container .box p {
+    line-height: 1.8;
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: 'Montserrat';
+    padding: 1.5rem;
+}
+
+/* doller section end */
+/* footer section start */
 .footer{
     background: #111111;
 }
@@ -489,6 +580,8 @@ header .menu {
     color:#fff;
     border-top: var(--border);
 }
+/* footer section end */
+
 
 
 
@@ -556,6 +649,9 @@ header .menu {
     }
 
     .heading{
+        font-size: 2.5rem;
+    }
+    .heading2{
         font-size: 2.5rem;
     }
 
